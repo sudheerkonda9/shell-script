@@ -17,16 +17,16 @@ then
 echo "Installation.......FAILED"
 exit 1
 else
-echo "Installation.......PASSED"
+echo "Installation.......SUCCESS"
 fi
 }
  #My SQL installation
-yum installss mysql -y
+yum install mysql -y
 
 VALIDATE $?
 
 # Post fix installation
-yum installss postfix -y
+yum install postfix -y
 
 VALIDATE $?
 
