@@ -6,15 +6,15 @@ if [ $USERID -ne 0 ]
 then 
 echo "ERROR:: $USERID is not a root user"
 exit 1
-# else
-#  echo "$USERID is a root user"
+ else
+  echo "$USERID is a root user"
  fi
-yum install mysqlll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
 echo "ERROR: SQL Installation failed"
-exit 1
+#exit 1
 else
 echo "SUCCESS:SQL installation completed!!!"
 fi
