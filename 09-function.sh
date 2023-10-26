@@ -14,20 +14,20 @@ exit 1
 
 if [ $1 -ne 0 ]
 then
-echo "Installation.......FAILED"
+echo "$2.......FAILED"
 exit 1
 else
-echo "Installation.......SUCCESS"
+echo "$2.......SUCCESS"
 fi
 }
  #My SQL installation
 yum install mysql -y
 
-VALIDATE $?
+VALIDATE $? "MYSQL Installation"
 
 # Post fix installation
-yum install postfix -y
+yum instals postfix -y
 
-VALIDATE $?
+VALIDATE $? "POSTFIX Installation"
 
 
