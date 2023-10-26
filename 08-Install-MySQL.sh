@@ -11,7 +11,7 @@ exit 1
  fi
 yum install mysqlll -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
 echo "ERROR: SQL Installation failed"
 exit 1
