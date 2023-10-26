@@ -10,3 +10,11 @@ exit 1
 #  echo "$USERID is a root user"
  fi
 yum install mysqlll -y
+
+if [ $? -ne 0]
+then
+echo "ERROR: SQL Installation failed"
+exit 1
+else
+echo "SUCCESS:SQL installation completed!!!"
+fi
