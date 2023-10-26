@@ -9,7 +9,7 @@ exit 1
  else
   echo "$USERID is a root user"
  fi
-yum install mysql -y
+yum installss mysql -y
 
 if [ $? -ne 0 ]
 then
