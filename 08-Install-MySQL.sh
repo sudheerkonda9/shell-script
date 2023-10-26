@@ -8,4 +8,4 @@ echo "ERROR:: $USERID is not a root user"
 
 # else
 #  echo "$USERID is a root user"
- if
+ fi
