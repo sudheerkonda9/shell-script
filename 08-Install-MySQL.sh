@@ -14,7 +14,8 @@ yum installss mysql -y
 if [ $? -ne 0 ]
 then
 echo "ERROR: SQL Installation failed"
-#exit 1
+
+echo "ERROR: SQL Installation failed22222"
 else
 echo "SUCCESS:SQL installation completed!!!"
 fi
