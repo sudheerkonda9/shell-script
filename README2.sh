@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "I am learning Shell Script"
+echo "I am learning Shell Script and GIT REPO"
