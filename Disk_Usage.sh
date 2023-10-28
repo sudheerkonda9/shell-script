@@ -28,7 +28,7 @@ do
    if [ $usage -gt $DISK_USAGE_THRESHOLD ]
    then
  #below message + means add/append to the previos message. 
-   message+="HIGH DISK USAGE ON $partition: $usage \n"
+   message+="HIGH DISK USAGE ON $partition: $usage\n"
    fi
  done <<< $DISK_USAGE
  echo "messge : $message" 
