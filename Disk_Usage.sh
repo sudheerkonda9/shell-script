@@ -25,14 +25,15 @@ do
  partition=$(echo $line | awk '{print $1}')
 
 #now you need to check whther it is more than threshold or not
-   if [ $usage -gt $DISK_USAGE_THRESHOLD ]
+   if [ $usage -gt $DISK_USAGE_THRESHOLD ];
    then
  #below message + means add/append to the previos message. 
-   message+="HIGH DISK USAGE ON $partition: $usage\n"
+   message+="HIGH DISK USAGE ON $partition: $usage \n"
    fi
  done <<< $DISK_USAGE
  echo "messge : $message" 
 
 #  echo "$message High Disk Usage" | mail -s "message" sudheerkonda9@gmail.com
 
-mail.sh sudheerkonda9@gmail.com "HIGH DISK USAGE" "$message" "DEVOPSTEAM" "High Disk Usage"
+#How to call other shell script from your current shellscript file
+sh mail.sh sudheerkonda9@gmail.com "HIGH DISK USAGE" "$message" "DEVOPSTEAM" "High Disk Usage"
