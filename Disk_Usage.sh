@@ -18,5 +18,5 @@ DISK_USAGE_THRESHOLD=1
 while IFS= read line
 do 
  #Write your statements here
-
+  echo "output $line"
  done <<< $DISK_USAGE
