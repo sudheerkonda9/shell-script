@@ -35,3 +35,9 @@ sudo mount /dev/xvdf /data
 Now check df -hT
 
 ![Alt text](image.png)
+
+--
+Now two hard disk are availble , why i am telling is we need to loop it
+In realtime projects we have more volumes attached.
+
+Now , you need to send email for all the disks attached to EC2 instance ,that is why i added another disk
